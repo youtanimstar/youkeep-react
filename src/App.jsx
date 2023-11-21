@@ -1,4 +1,3 @@
-import SplitPane from "react-split-pane";
 import "./css/index.css";
 import Editor from "./components/Editor";
 import Sidebar from "./components/Sidebar";
@@ -15,7 +14,6 @@ function App() {
   return (
     <>
       <div className="container">
-        <SplitPane split="vertical" minSize={100} maxSize={500}>
           <div className="left">
             <Sidebar
               setNotes={setNotes}
@@ -32,7 +30,6 @@ function App() {
               setNotes={setNotes}
             />
           </div>
-        </SplitPane>
       </div>
     </>
   );
